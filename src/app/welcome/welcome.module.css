@@ -1,0 +1,49 @@
+.backgroundImg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1690885732016-f44e973ed3bf?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.contentWelcome {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem;
+    min-height: 100vh;
+}
+
+.contentWelcome h1,
+.contentWelcome p {
+    letter-spacing: var(--letter-spacing);
+    color: var(--foreground-second-rgb);
+    padding-top: 1rem;
+}
+
+.contentWelcome button {
+    display: flex;
+    justify-content: center;
+    margin-top: 18.75rem;
+}
+
+.contentWelcome a {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size-small);
+    font-weight: 400;
+    letter-spacing: var(--letter-spacing);
+    outline: none;
+    text-decoration: none;
+    width: 100px;
+    padding: 6px 10px 6px 10px;
+    border: 2px solid white;
+    color: white;
+}
+
+.contentWelcome a:hover {
+    transition: 0.5s;
+    background: white;
+    color: rgb(var(--foreground-first-rgb));
+}
