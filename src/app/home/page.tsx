@@ -23,9 +23,11 @@ export const metadata: Metadata = {
 
 export default function Homepage({}: Props) {
   return (
-    <div>
-      <DrawerAppBar />
-      <p>Welcome baby</p>
-    </div>
+    <>
+      <main className={styles.mainHomepage}>
+        <DrawerAppBar />
+        <p>Welcome baby</p>
+      </main>
+    </>
   );
 }

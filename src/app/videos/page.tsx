@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import * as React from "react";
 import styles from "./homepage.module.css";
-import ResponsiveAppBar from "../../components/navbar/autre";
+import DrawerAppBar from "../../components/navbar/page";
 
 type Props = {};
 
@@ -21,11 +21,11 @@ export const metadata: Metadata = {
 
 export default function Videos({}: Props) {
   return (
-    <div>
-      <header>
-        <ResponsiveAppBar />
-      </header>
-      <p>See my videos</p>
-    </div>
+    <>
+      <main>
+        <DrawerAppBar />
+        <p>Welcome baby</p>
+      </main>
+    </>
   );
 }

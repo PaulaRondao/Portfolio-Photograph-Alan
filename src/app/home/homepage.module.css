@@ -1,0 +1,7 @@
+.mainHomepage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem;
+    min-height: 100vh;
+}

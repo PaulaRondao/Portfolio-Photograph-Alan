@@ -25,7 +25,7 @@ function Welcome() {
         <h1>Alan Syvannarath</h1>
         <p>PHOTOGRAPHY</p>
         <button type="button">
-          <Link href="/homepage">WELCOME</Link>
+          <Link href="/home">WELCOME</Link>
         </button>
       </div>
     </div>

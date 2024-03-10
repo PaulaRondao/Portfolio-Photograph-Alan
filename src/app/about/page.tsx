@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import * as React from "react";
+import DrawerAppBar from "../../components/navbar/page";
 
 type Props = {};
 
@@ -19,8 +20,11 @@ export const metadata: Metadata = {
 
 export default function page({}: Props) {
   return (
-    <div>
-      <p>Hello</p>
-    </div>
+    <>
+      <main>
+        <DrawerAppBar />
+        <p>Welcome baby</p>
+      </main>
+    </>
   );
 }
