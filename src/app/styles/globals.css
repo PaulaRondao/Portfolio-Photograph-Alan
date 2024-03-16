@@ -43,11 +43,8 @@ h2 {
 h3 {
   font-size: 2.074rem;
   letter-spacing: var(--letter-spacing);
-}
-
-h1 {
-  font-size: 2.986rem;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: 0.25rem;
+  margin-bottom: 20px;
 }
 
 h4 {

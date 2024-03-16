@@ -1,0 +1,91 @@
+import type { Metadata } from "next";
+import * as React from "react";
+import styles from "./homepage.module.css";
+import DrawerAppBar from "../../components/navbar/page";
+
+type Props = {};
+
+export const metadata: Metadata = {
+  title: "Homepage - Alan Syvannarath Photographer",
+  description:
+    "Charmed in the field of images in all their forms, it is as natural as possible that Alan wants to share with people the way he sees what surrounds him. As touched by the subtlety of the light on a face as by a grandiose panorama that is displayed before his eyes.",
+  metadataBase: new URL("https://alan-photographer/homepage"),
+  alternates: {
+    canonical: "https://alan-photographer/homepage",
+  },
+  openGraph: {
+    title: "Homepage - Alan Syvannarath Photographer",
+    description:
+      "Charmed in the field of images in all their forms, it is as natural as possible that Alan wants to share with people the way he sees what surrounds him. As touched by the subtlety of the light on a face as by a grandiose panorama that is displayed before his eyes.",
+    url: "https://alan-photographer/homepage",
+  },
+};
+
+export default function Homepage({}: Props) {
+  return (
+    <>
+      <DrawerAppBar />
+      <main className={styles.mainBlock}>
+        <div className={styles.container}>
+          <section
+            className={`${styles.section} ${styles.image} ${styles.one}`}
+          >
+            <h1 className={styles.heading}>Logo!</h1>
+          </section>
+          <section className={`${styles.section} ${styles.text}`}>
+            <h4>PHOTOGRAPH</h4>
+            <p>
+              &quot;I&apos;m touched by the real thing. For as long as I can
+              remember, I&apos;ve wanted to preserve life&apos;s moments. I was
+              afraid of forgetting. It&apos;s through photography that I hold my
+              precious treasures from the past.&quot;
+            </p>
+          </section>
+          <section
+            className={`${styles.section} ${styles.image} ${styles.two}`}
+          ></section>
+          <section className={`${styles.section} ${styles.text}`}>
+            <h4>EXPLORE</h4>
+            <p>
+              &quot;Charmed by the field of images in all its forms, it is as
+              naturally as possible that I want to share with people the way I
+              see what surrounds me.&quot;
+            </p>
+          </section>
+          <section
+            className={`${styles.section} ${styles.image} ${styles.three}`}
+          ></section>
+          <section className={`${styles.section} ${styles.text}`}>
+            <h4>VIDEOS</h4>
+            <p>
+              &quot;Charmed by the field of images in all its forms, it is as
+              naturally as possible that I want to share with people the way I
+              see what surrounds me.&quot;
+            </p>
+          </section>
+          <section
+            className={`${styles.section} ${styles.image} ${styles.four}`}
+          ></section>
+        </div>
+        <section
+          style={{
+            position: "relative",
+            marginTop: "40px",
+            transform: "none",
+          }}
+        ></section>
+        <div style={{ padding: "100px 59px" }}>
+          <figure></figure>
+          <figcaption>
+            <div>
+              <h3>Voici les vidéos</h3>
+            </div>
+            <div>
+              <p>Je mappelle Alan</p>
+            </div>
+          </figcaption>
+        </div>
+      </main>
+    </>
+  );
+}
