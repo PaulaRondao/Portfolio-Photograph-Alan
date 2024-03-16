@@ -29,6 +29,10 @@ To learn more about Next.js, take a look at the following resources:
 
 ## Homepage 
 
-I realized a parallax in using `npm react-scroll-parallax`
+I realized a parallax in using 
+
+```bash
+npm react-scroll-parallax
+```
 
 
