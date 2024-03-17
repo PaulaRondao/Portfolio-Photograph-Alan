@@ -8,6 +8,23 @@
   box-sizing: border-box;
 }
 
+.galeriePhotos {
+  columns: 4 20ch;
+  /* 4 colonnes max */
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+.galeriePhotos div {
+  background-color: #ddd;
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
+
+.galeriePhotos img {
+  display: block;
+  max-width: 100%
+}
 
 /* .main {
   display: flex;

@@ -42,8 +42,6 @@ export default function Contact({}: Props) {
             <h4
               style={{
                 marginBottom: "2.5rem",
-                display: "flex",
-                justifyContent: "center",
                 textAlign: "center",
                 lineHeight: "2",
               }}

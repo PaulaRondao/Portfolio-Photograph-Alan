@@ -4,10 +4,8 @@ import { pageData } from "../../data/pageData";
 import * as React from "react";
 import styles from "../styles/page.module.css";
 import DrawerAppBar from "../../components/navbar/page";
-import Box from "@mui/material/Box";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
-import Masonry from "@mui/lab/Masonry";
 
 import Footer from "../../components/footer/page";
 
@@ -43,15 +41,16 @@ export default function ResponsiveColumns() {
     <>
       <DrawerAppBar />
       <main className={styles.innerCenter}>
-        <Box sx={{ width: 500, minHeight: 253 }}>
-          <Masonry columns={{ xs: 3, sm: 4 }} spacing={2}>
-            {heights.map((height, index) => (
-              <Item key={index} sx={{ height }}>
-                {index + 1}
-              </Item>
-            ))}
-          </Masonry>
-        </Box>
+        <div>
+          <div>
+            <h1> Explication</h1>
+            <p>quelques explication</p>
+          </div>
+        </div>
+        <div>choix des pays</div>
+        <div className={styles.galeriePhotos}>
+          <div>1</div>
+        </div>
       </main>
       <Footer />
     </>
