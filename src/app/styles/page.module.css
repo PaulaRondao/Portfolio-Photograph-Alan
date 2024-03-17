@@ -1,3 +1,14 @@
+.innerCenter {
+  display: flow-root;
+  max-width: 1280px;
+  min-height: calc(-149px + 100vh);
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  box-sizing: border-box;
+}
+
+
 /* .main {
   display: flex;
   flex-direction: column;
@@ -110,7 +121,7 @@
 }
 
 /* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
@@ -128,7 +139,7 @@
 }
 
 /* Mobile */
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .content {
     padding: 4rem;
   }
@@ -198,10 +209,10 @@
         rgb(var(--background-end-rgb)) 40%);
     z-index: 1;
   }
-}
+} */
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
+/* @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
@@ -225,6 +236,4 @@
   to {
     transform: rotate(0deg);
   }
-}
-
-*/
+} */

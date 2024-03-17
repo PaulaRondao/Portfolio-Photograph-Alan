@@ -14,10 +14,10 @@ import Typography from "@mui/material/Typography";
 
 import Link from "next/link";
 import MyLogo from "./logo";
-import styles from "./navbar.module.css";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "../../app/styles/styles";
+import { Button } from "@mui/material";
 
 interface Props {
   /**
@@ -71,17 +71,6 @@ export default function DrawerAppBar(props: Props) {
           </Link>
         </ListItem>
         <ListItem disablePadding>
-          <Link href="/about" passHref>
-            <Typography
-              sx={{
-                padding: "8px 24px",
-              }}
-            >
-              About
-            </Typography>
-          </Link>
-        </ListItem>
-        <ListItem disablePadding>
           <Link href="/portfolio" passHref>
             <Typography
               sx={{
@@ -100,6 +89,17 @@ export default function DrawerAppBar(props: Props) {
               }}
             >
               Videos
+            </Typography>
+          </Link>
+        </ListItem>
+        <ListItem disablePadding>
+          <Link href="/about" passHref>
+            <Typography
+              sx={{
+                padding: "8px 24px",
+              }}
+            >
+              About
             </Typography>
           </Link>
         </ListItem>
@@ -129,7 +129,7 @@ export default function DrawerAppBar(props: Props) {
           width: "100%",
         }}
       >
-        <CssBaseline />
+        {/* <CssBaseline /> */}
         <AppBar
           component="header"
           sx={{
@@ -182,49 +182,24 @@ export default function DrawerAppBar(props: Props) {
                   margin: "auto",
                 }}
               >
-                <Link
-                  href="/home"
-                  passHref
-                  style={{ margin: "0px 16px" }}
-                  className={styles.link}
-                >
-                  <span>Home</span>
+                <Link href="/home" passHref style={{ margin: "0px 16px" }}>
+                  Home
                 </Link>
 
-                <Link
-                  href="/about"
-                  passHref
-                  style={{ margin: "0px 16px" }}
-                  className={styles.link}
-                >
-                  <span>About</span>
+                <Link href="/portfolio" passHref style={{ margin: "0px 16px" }}>
+                  Portfolio
                 </Link>
 
-                <Link
-                  href="/portfolio"
-                  passHref
-                  style={{ margin: "0px 16px" }}
-                  className={styles.link}
-                >
-                  <span>Portfolio</span>
+                <Link href="/videos" passHref style={{ margin: "0px 16px" }}>
+                  Videos
                 </Link>
 
-                <Link
-                  href="/videos"
-                  passHref
-                  style={{ margin: "0px 16px" }}
-                  className={styles.link}
-                >
-                  <span>Videos</span>
+                <Link href="/about" passHref style={{ margin: "0px 16px" }}>
+                  About
                 </Link>
 
-                <Link
-                  href="/contact"
-                  passHref
-                  style={{ margin: "0px 16px" }}
-                  className={styles.link}
-                >
-                  <span>Contact</span>
+                <Link href="/contact" passHref style={{ margin: "0px 16px" }}>
+                  Contact
                 </Link>
               </Box>
               <Drawer
@@ -233,7 +208,7 @@ export default function DrawerAppBar(props: Props) {
                 open={mobileOpen}
                 onClose={handleDrawerToggle}
                 ModalProps={{
-                  keepMounted: true, // Better open performance on mobile.
+                  keepMounted: true,
                 }}
                 sx={{
                   display: { xs: "block", sm: "none" },

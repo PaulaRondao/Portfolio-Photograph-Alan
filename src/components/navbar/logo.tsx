@@ -1,6 +1,6 @@
 function MyLogo() {
   return (
-    <div>
+    <>
       <svg
         width="137"
         height="32"
@@ -15,7 +15,7 @@ function MyLogo() {
           fill="black"
         />
       </svg>
-    </div>
+    </>
   );
 }
 

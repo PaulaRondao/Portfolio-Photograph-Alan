@@ -42,13 +42,14 @@ h2 {
 
 h3 {
   font-size: 2.074rem;
-  letter-spacing: var(--letter-spacing);
-  letter-spacing: 0.25rem;
+  /* letter-spacing: 0.25rem; */
   margin-bottom: 20px;
+  font-weight: 400;
 }
 
 h4 {
   font-size: 1.728rem;
+  font-weight: 400;
 }
 
 p {
@@ -57,10 +58,18 @@ p {
 }
 
 a {
-  color: inherit;
+  color: #222021;
   text-decoration: none;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
 }
+
+/* a:hover {
+  text-decoration: underline;
+  transition: width 0.3s ease;
+  color: #222021;
+} */
 
 button {
   background-color: transparent;

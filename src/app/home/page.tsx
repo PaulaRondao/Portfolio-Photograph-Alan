@@ -9,6 +9,8 @@ import {
   ParallaxBanner,
 } from "react-scroll-parallax";
 
+import Footer from "../../components/footer/page";
+
 type Props = {};
 
 // export const metadata: Metadata = {
@@ -103,6 +105,7 @@ export default function Homepage({}: Props) {
             impedit odio sed.
           </p>
         </div>
+        <Footer />
       </ParallaxProvider>
     </>
   );

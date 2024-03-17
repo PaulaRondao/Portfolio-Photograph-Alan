@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import * as React from "react";
-import styles from "./homepage.module.css";
+import styles from "../styles/page.module.css";
 import DrawerAppBar from "../../components/navbar/page";
+import Footer from "../../components/footer/page";
 
 type Props = {};
 
@@ -22,10 +23,11 @@ export const metadata: Metadata = {
 export default function Videos({}: Props) {
   return (
     <>
-      <main>
+      <main className={styles.innerCenter}>
         <DrawerAppBar />
         <p>Welcome baby</p>
       </main>
+      <Footer />
     </>
   );
 }
