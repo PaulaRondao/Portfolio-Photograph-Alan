@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./styles/globals.css";
+import { Providers } from "./providers";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -43,7 +44,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="Portfolio Photographer">
       <head></head>
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

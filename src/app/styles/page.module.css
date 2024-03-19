@@ -8,6 +8,23 @@
   box-sizing: border-box;
 }
 
+.parallaxContent h4 {
+  letter-spacing: .08em;
+  margin-bottom: 15px;
+}
+
+.parallaxContent p {
+  letter-spacing: .08em;
+  line-height: 2.3em;
+  font-weight: 400;
+  box-sizing: border-box;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+
 .galeriePhotos {
   columns: 4 20ch;
   /* 4 colonnes max */
@@ -24,6 +41,24 @@
 .galeriePhotos img {
   display: block;
   max-width: 100%
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.content span.imgTxt {
+  background-color: #333;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
 }
 
 /* .main {

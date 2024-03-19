@@ -27,20 +27,23 @@ export default function NotFound({}: Props) {
             textAlign: "center",
             padding: "6rem",
             minHeight: "100vh",
+            color: "white",
           }}
         >
-          <h3 style={{ color: "white", paddingTop: "1rem" }}>
-            Hello, sorry, the page you&apos;re looking for, doesn&apos;t exist.
+          <h1>404</h1>
+          <h2>This page got unplugged</h2>
+          <h3 style={{ paddingTop: "1rem" }}>
+            OOPS ! Looks like you&apos;ve wandered a little too far !
           </h3>
-          <h4 style={{ color: "white", paddingTop: "1rem" }}>
-            Don&apos;t worry, you can go back at the homepage
+          <h4 style={{ paddingTop: "1rem" }}>
+            Please, go back to the homepage
           </h4>
           <button
             type="button"
             style={{
               display: "flex",
               justifyContent: "center",
-              marginTop: "18.75rem",
+              marginTop: "3rem",
             }}
           >
             <Link
@@ -49,18 +52,16 @@ export default function NotFound({}: Props) {
               style={{
                 display: "flex",
                 justifyContent: "center",
-                fontSize: "0.833rem",
+                fontSize: "20px",
                 letterSpacing: "0.125rem",
                 outline: "none",
-                width: "100px",
-                padding: "6px 10px 6px 10px",
-                border: "2px solid white",
-                borderRadius: "2px",
+                // width: "210px",
+                padding: "8px 10px 10px 8px",
                 textDecoration: "none",
               }}
-              className={styles.welcomeLink}
+              className={styles.goBackLink}
             >
-              Go back home
+              BACK TO HOMEPAGE
             </Link>
           </button>
         </section>
