@@ -80,7 +80,7 @@ export default function About({}: Props) {
             }}
           >
             <Link
-              href="/home"
+              href="/contact"
               style={{
                 display: "flex",
                 justifyContent: "center",

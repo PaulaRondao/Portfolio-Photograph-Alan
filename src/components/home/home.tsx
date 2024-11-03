@@ -24,7 +24,6 @@ export default function Home({}: Props) {
     background: `url(${image1})`,
     backgroundSize: "cover",
     filter: "blur(0px)",
-    // strength: 800,
   };
 
   const parallaxStyleTwo = {
@@ -174,7 +173,7 @@ export default function Home({}: Props) {
             }}
           >
             <Link
-              href="/home"
+              href="/about"
               style={{
                 display: "flex",
                 justifyContent: "center",

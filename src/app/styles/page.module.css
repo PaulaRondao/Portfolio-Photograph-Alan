@@ -24,6 +24,21 @@
   text-align: center;
 }
 
+.homeLink:hover {
+  transition: transform 1.5s;
+  background: rgb(var(--foreground-first-rgb));
+  color: white;
+}
+
+.aboutLink:hover {
+  transition: transform 1.5s;
+  background: rgb(var(--foreground-first-rgb));
+  color: white;
+}
+
+/* .homeLink {
+  color: white;
+} */
 
 .galeriePhotos {
   columns: 4 20ch;
