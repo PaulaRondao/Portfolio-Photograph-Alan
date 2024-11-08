@@ -1,14 +1,4 @@
-.innerCenter {
-  display: flow-root;
-  max-width: 1280px;
-  min-height: calc(-149px + 100vh);
-  margin: 0 auto;
-  padding: 0 2rem;
-  position: relative;
-  box-sizing: border-box;
-}
-
-.parallaxContent h4 {
+/* .parallaxContent h4 {
   letter-spacing: .08em;
   margin-bottom: 15px;
 }
@@ -36,18 +26,8 @@
   color: white;
 }
 
-/* .homeLink {
-  color: white;
-} */
 
-.galeriePhotos {
-  columns: 4 20ch;
-  /* 4 colonnes max */
-  padding: 1.5rem;
-  gap: 1.5rem;
-}
-
-.galeriePhotos div {
+/* .galeriePhotos div {
   background-color: #ddd;
   break-inside: avoid;
   margin-bottom: 1.5rem;
@@ -74,7 +54,7 @@
   padding: 1rem;
   font-size: 1.5rem;
   letter-spacing: 10px;
-}
+}  */
 
 /* .main {
   display: flex;

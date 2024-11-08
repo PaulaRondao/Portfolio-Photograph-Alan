@@ -1,11 +1,18 @@
-"use client";
-
 import * as React from "react";
 import styles from "../../app/styles/page.module.css";
-import DrawerAppBar from "../navbar/page";
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+import {
+  ButtonContainer,
+  LinkContainer,
+} from "../../../ui/buttons/button.styles";
+import { Wrapper } from "../layoutWelcome/LayoutWelcome.styles";
+import {
+  Container,
+  ParallaxWrapper,
+  ParallaxWrapperHeader,
+} from "./parallax.styles";
+import { Title } from "../website/global-styles/global.styles";
 import Link from "next/link";
-import Footer from "../footer/page";
 
 type Props = {};
 
@@ -18,7 +25,7 @@ const image3 =
 const image4 =
   "https://images.unsplash.com/photo-1538982198821-0714ff3d74ba?ixlib=rb-0.3.5&s=0550cf3351896481de327a10971739f1&auto=format&fit=crop&w=1251&q=80";
 
-export default function Home({}: Props) {
+function ParallaxEffect({}: Props): React.JSX.Element {
   const parallaxStyle = {
     minHeight: "100vh",
     background: `url(${image1})`,
@@ -44,42 +51,17 @@ export default function Home({}: Props) {
 
   return (
     <>
-      <DrawerAppBar />
-      <main className={styles.innerCenter}>
+      <Container>
         <ParallaxBanner
           layers={[{ image: image1, speed: -15 }]}
           style={parallaxStyle}
           className="aspect-[2/1]"
         />
-        <div
-          style={{
-            position: "absolute",
-            inset: "0",
-            textAlign: "center",
-            left: "0",
-            right: "0",
-            top: "10%",
-          }}
-        >
-          <h1
-            style={{
-              fontSize: "30px",
-              color: "black",
-            }}
-          >
-            Hello World!
-          </h1>
-        </div>
+        <ParallaxWrapperHeader>
+          <Title>Hello World!</Title>
+        </ParallaxWrapperHeader>
         <Parallax speed={-5}>
-          <div
-            className={styles.parallaxContent}
-            style={{
-              backgroundColor: "white",
-              height: "200px",
-              textAlign: "center",
-              padding: "2rem 1rem",
-            }}
-          >
+          <ParallaxWrapper>
             <h4>PHOTOGRAPH</h4>
             <p>
               &quot;I&apos;m touched by the real thing. For as long as I can
@@ -87,7 +69,7 @@ export default function Home({}: Props) {
               afraid of forgetting. It&apos;s through photography that I hold my
               precious treasures from the past.&quot;
             </p>
-          </div>
+          </ParallaxWrapper>
         </Parallax>
         <ParallaxBanner
           layers={[{ image: image2, speed: -15 }]}
@@ -95,38 +77,23 @@ export default function Home({}: Props) {
           className="aspect-[2/1]"
         />
         <Parallax speed={-5}>
-          <div
-            className={styles.parallaxContent}
-            style={{
-              backgroundColor: "white",
-              height: "200px",
-              textAlign: "center",
-              padding: "2rem 1rem",
-            }}
-          >
+          <ParallaxWrapper>
             <h4>EXPLORE</h4>
             <p>
               &quot;Charmed by the field of images in all its forms, it is as
               naturally as possible that I want to share with people the way I
               see what surrounds me.&quot;
             </p>
-          </div>
+          </ParallaxWrapper>
         </Parallax>
         <ParallaxBanner
           layers={[{ image: image3, speed: -15 }]}
           style={parallaxStyleThree}
           className="aspect-[2/1]"
         />
-        <div
-          className={styles.parallaxContent}
-          style={{
-            backgroundColor: "white",
-            height: "200px",
-            textAlign: "center",
-            padding: "1rem 1rem",
-            borderBottom: "2px solid #D6D7DD",
-            margin: "30px 0 60px 0",
-          }}
+        <ParallaxWrapper
+          margin="30px 0 60px 0"
+          borderBottom="2px solid #D6D7DD"
         >
           <h4>VIDEOS</h4>
           <p>
@@ -134,7 +101,7 @@ export default function Home({}: Props) {
             naturally as possible that I want to share with people the way I see
             what surrounds me.&quot;
           </p>
-        </div>
+        </ParallaxWrapper>
         <section>
           <h3 style={{ marginBottom: "2rem" }}>TRAVEL INSPIRATION</h3>
           <p style={{ marginBottom: "2rem" }}>
@@ -159,42 +126,16 @@ export default function Home({}: Props) {
             elementum gravida phasellus nibh feugiat.
           </p>
         </section>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            margin: "3rem 0 5rem 0",
-          }}
-        >
-          <button
-            type="button"
-            style={{
-              textAlign: "center",
-            }}
-          >
-            <Link
-              href="/about"
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                fontSize: "1rem",
-                letterSpacing: "0.100rem",
-                outline: "none",
-                width: "130px",
-                padding: "15px 10px 15px 10px",
-                border: "2px solid #222021",
-                borderRadius: "2px",
-                textDecoration: "none",
-                color: "#222021",
-                fontWeight: "bold",
-              }}
-            >
-              See more
-            </Link>
-          </button>
-        </div>
-      </main>
-      <Footer />
+      </Container>
+      <ParallaxWrapper margin="3rem 0 5rem 0">
+        <Wrapper>
+          <Link href="">
+            <ButtonContainer>See More</ButtonContainer>
+          </Link>
+        </Wrapper>
+      </ParallaxWrapper>
     </>
   );
 }
+
+export default ParallaxEffect;

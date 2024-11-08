@@ -1,6 +1,7 @@
+import WelcomePage from "@/components/website/welcome/WelcomePage";
 import { Metadata } from "next";
 import * as React from "react";
-import About from "../../components/about/about";
+// import About from "../../components/about/about";
 
 type Props = {};
 
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 export default function page({}: Props) {
   return (
     <>
-      <About />
+      <WelcomePage />
     </>
   );
 }

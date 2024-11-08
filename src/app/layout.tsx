@@ -43,8 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="Portfolio Photographer">
-      <head></head>
-      <body className={roboto.className}>
+      <body>
         <Providers>{children}</Providers>
       </body>
     </html>

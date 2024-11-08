@@ -1,27 +1,30 @@
-import type { Metadata } from "next";
-import * as React from "react";
-import Portfolio from "../../components/portfolio/portfolio";
+// "use client";
 
-type Props = {};
+// import * as React from "react";
+// import DrawerAppBar from "../navbar/page";
+// import styles from "../../app/styles/page.module.css";
 
-export const metadata: Metadata = {
-  title: "Photos - Alan Syvannarath Photographer",
-  description: "Explore the world, one photo at a time. Travel and Adventure",
-  metadataBase: new URL("https://alan-photographer/photos"),
-  alternates: {
-    canonical: "https://alan-photographer/photos",
-  },
-  openGraph: {
-    title: "Photos - Alan Syvannarath Photographer",
-    description: "Explore the world, one photo at a time. Travel and Adventure",
-    url: "https://alan-photographer/photos",
-  },
-};
+// import Footer from "../../components/footer/page";
 
-export default function page() {
-  return (
-    <>
-      <Portfolio />
-    </>
-  );
-}
+// type Props = {};
+
+// export default function Portfolio() {
+//   return (
+//     <>
+//       <DrawerAppBar />
+//       <main className={styles.innerCenter}>
+//         <div>
+//           <div>
+//             <h1> Explication</h1>
+//             <p>quelques explication</p>
+//           </div>
+//         </div>
+//         <div>choix des pays</div>
+//         <div className={styles.galeriePhotos}>
+//           <div>1</div>
+//         </div>
+//       </main>
+//       <Footer />
+//     </>
+//   );
+// }

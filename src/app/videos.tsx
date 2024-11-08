@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import * as React from "react";
-import Videos from "../../components/videos/videos";
+import Videos from "../components/videos/videos";
 
 type Props = {};
 
